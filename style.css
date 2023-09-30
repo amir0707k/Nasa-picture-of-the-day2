@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.remove-container{
+    opacity: 0
+}
+.empty{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    background:linear-gradient(90deg,rgb(193, 149, 235),blueviolet);
+}
+.welcome{
+    font-family: 'Dancing Script', cursive;
+    font-size: 120px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.show{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.body-container{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+      height: 100vh;
+  overflow: auto;
+
+}
+.heading{
+    margin-bottom: 40px;
+}
+.title{
+    margin-top: 50px;
+    font-size: 28px;
+}
+.description{
+    margin-top: 20px;
+    text-align: justify;
+}
+.current-image-container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 30px 50px 50px 50px;
+    line-height: 40px;
+    text-justify: kashida;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.search-picture{
+    margin-top: 30px;
+    margin-inline: auto;
+    position: relative;
+    font-family: sans-serif
+}
+form{
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    left: -25%;
+    align-items: center;
+}
+.previous-searches{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-inline: auto;
+    position: absolute;
+    top: 120px;
+}
+#search-history{
+    padding:0 20px;
+}
+input{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 6px;
+    min-width: 150px;
+    outline: none;
+}
+li{
+    list-style-type: none;
+    padding: 20px;
+}
+.image{
+    width: 40vw;
+    height: 60vh;
+    margin-inline: auto;
+}
+button{
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+    font-weight: 700;
+    margin-left: 10px;
+    border: none;
+    background-color: #017BFC;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+label{
+    font-size: 20px;
+    margin-right: 10px;
+}
